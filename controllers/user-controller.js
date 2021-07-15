@@ -40,8 +40,25 @@ const userController = {
 
     deleteUser({ params }, res) {
         User.findOneAndDelete({ _id: params.id })
-        .then(dbUserData => res.json(dbUserData))
+        .then(dbUserData => {
+            if (!dbUserData) {
+                res.status(404).json({ message: "no user found with this id"});
+                return;
+            }
+            res.json(dbUserData);
+        })
         .catch(err => res.json(err));
+    },
+
+    //shows data added but on pull no update stuck
+    addNewFriend({ params, body }, res){
+        User.findOneAndUpdate({ _id: params.userId }, body, { new: true, runValidators: true })
+        .then(dbUserData => res.json(dbUserData))
+        .catch(err => res.json(err))
+    },
+
+    deleteFriend(req, res){
+
     }
 }
 

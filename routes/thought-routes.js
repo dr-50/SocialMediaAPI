@@ -12,4 +12,5 @@ router
 router
     .route('/create')
     .post(createThought)
+    
 module.exports = router;

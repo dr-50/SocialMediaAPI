@@ -58,11 +58,6 @@ const userController = {
     },
 
     deleteFriend({ params, body }, res){
-        // User.findOne({_id: params.userId})
-        // .then(dbUserData => {
-        //     dbUserData.pull(body.friendsId)
-        //     return dbUserData.save()
-        // }).then(dbUserData => res.send(dbUserData))
         User.updateOne( {_id: params.userId}, { $pull: {"friends": body.friends}})
         .then(dbUserData => res.json(dbUserData))
         .catch(err => res.json(err))

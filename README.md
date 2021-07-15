@@ -1,9 +1,9 @@
 # SocialMediaAPI
 
 ## Description:
-An API for users to interact with their friends with.
+An API for users to interact with their friends.
 
-![screenshot](/)
+![screenshot](/public/images/insomnia.jpg)
 
 Built With:
 * Express
@@ -12,10 +12,10 @@ Built With:
 
 ## Installation
 1. Install the npm packages
-2. Run the seeds file
+2. Install insomnia for running application routes
 
 ## Usage
-Users can ...
+Users can add/delete friends, create/add/update thoughts, and react to the thoughts. 
 
 ## Websites:
 github Repo -

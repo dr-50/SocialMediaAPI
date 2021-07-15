@@ -22,3 +22,7 @@ github Repo -
 https://github.com/dr-50/SocialMediaAPI
 
 video walkthrough -
+
+first 5 minutes: https://drive.google.com/file/d/1Gc96Ra_V-vw0VEf_idd7oEz9BOJYL67v/view
+
+remainder: https://drive.google.com/file/d/1M4mrKZAULX1QVMpZoWAR1-rF1pnJlRQ-/view

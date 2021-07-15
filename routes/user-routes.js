@@ -10,8 +10,12 @@ const {
 router
     .route('/all')
     .get(getAllUsers)
-    .post(createUser);
 
+
+router
+    .route('/')
+    .post(createUser);
+    
 router
     .route('/:id')
     .get(getUserById)
